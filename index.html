@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我要提货</title>
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/member.css">
+</head>
+<body class="wyth">
+
+<form method="GET" action="wyth1.html" id="my_form">
+<div class="header">
+	  <header class="weui-flex sqdl_header pd_rl">
+		  <div class="pd_r15"><a href="member.html">&lt; 返回</a></div>
+		  <div class="weui-flex__item pd_rl">
+          <select class="inp col_f fs12" onchange="submitForm();" name="cpmc" style="width:90%;">
+            <option style="color:#333!important;" value="1">请点击选择产品</option>
+             <option style="color:#333!important;" value="1">产品一产品一产品一产品一</option>
+             <option style="color:#333!important;" value="2">产品二</option>
+          </select>
+          <span class="fs16 col_f">∨</span>
+      </div>
+		  <!-- <div class="weui-flex__item"><p class="p_a_fx fs12"><a href="wyth_xdfx.html">总部&gt;</a></p></div> -->
+		  <div class="txt_c mrl15"><a href="wyth_ssfl.html" class="iconfont col_f pd_rl">&#xe652;</a></div>
+		  <div class="fr txt_c"><a href="wyth2.html" class="iconfont col_f">&#xe62e;</a></div>
+		</header>
+</div>
+</form>
+
+<div class="weui-cells mt40 wyth_list1">
+  <div class="weui-cell" id="1" data-kc="22">
+    <div class="weui-cell__hd wyth_list_img bg_f"><img class="sp_img" src="images/nr.jpg"></div>
+    <div class="weui-cell__bd fs14 wyth_list_p">
+      <p class="p_name fs16 col_0">产品名称11111</p>
+      <p class="col_qh fs14">品牌：<span>名称</span></p>
+      <p class="col_qh fs14">级别：<span class="col_r">￥<em class="sp_money">103.00</em></span></p>
+    </div>
+    <div class="weui-cell__ft">
+      <a class="col_f  eject_tj" href="javascript:;">添加</a>
+    </div>
+  </div>
+  <div class="weui-cell" id="2" data-kc="33">
+    <div class="weui-cell__hd wyth_list_img bg_f"><img class="sp_img" src="images/nr.jpg"></div>
+    <div class="weui-cell__bd fs14 wyth_list_p">
+      <p class="p_name fs16 col_0">产品名称2222</p>
+      <p class="col_qh fs14">品牌：<span>名称</span></p>
+      <p class="col_qh fs14">级别：<span class="col_r">￥<em class="sp_money">108.00</em></span></p>
+    </div>
+    <div class="weui-cell__ft">
+      <a class="col_f  eject_tj" href="javascript:;">添加</a>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="null_num fs12 bg_f">没有更多数据</div>
+ -->
+<div class="mask mask_act"></div>
+<div class="Eject" id='Eject'  data-sp="" data-id=''>
+      <div class="weui-cells">
+        <div class="weui-cell">
+          <div class="weui-cell__hd wyth_foot_img">
+            <img class="pop_img" src="">
+          </div>
+          <div class="weui-cell__bd wyth_foot_p">
+            <p class="col_r fs14">￥<span class="pop_money"></span></p>
+            <p class="col_qh fs12 pop_name"></p>
+            <p class="col_qh fs12">库存量：<span class="da_kc"></span></p>
+          </div>
+          <div class="weui-cell__ft wyth_foot_close_div"><span class="wyth_foot_close fs16s txt_cen">╳</span></div>
+        </div>
+      </div>
+      <div class="weui-cells wdzc_chcz_xh_xq_bzgg">
+        <div class="weui-cell bg_e">
+          <div class="weui-cell__bd">
+            <p>包装规格</p>
+          </div>
+        </div>
+        <div class="xh_xq_form">
+                    <div class="xh_xq_form_div bor_0 fs14">
+                       <div class="weui-flex height1 bor_0">
+                          <div class="weui-flex__item bor_0 txt_left">规格</div>
+                          <div class="weui-flex__item bor_0 txt_left">包装数量</div>
+                          <div class="weui-flex__item end_w bor_0">状态</div>
+                        </div>
+                        <div class="weui-flex height2 bor_0">
+                          <div class="weui-flex__item bor_0 txt_left">件</div>
+                          <div class="weui-flex__item bor_0 txt_left">1</div>
+                          <div class="weui-flex__item end_w bor_0">
+                            <p class="weui-grid__label weui-count clearfix number_j">
+                                <span class="weui-count__btn weui-count__decrease bor_l0 fl"></span>
+                                <input name='num' class="weui-count__number" type="number" value="0">
+                                <span class="weui-count__btn weui-count__increase bor_r0 fr"></span>
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+        </div>
+      </div>
+      <div class="wdzc_chcz_xh_xq_count bg_f">
+        <p>订单数量：<em class="numer_j_em">0</em> 件</span></span></p>
+        <p>合计：<span>￥<em class="price"></em></span><span> * </span><span class="total">0</span> = <span>￥ <em class="total_money">0</em></span></p>
+      </div>
+      <div class="weui-flex wyth_foot_but">
+        <div class="weui-flex__item"><a class="col_f bg_col1 but txt_cen fs16" href="wyth_ckjhd.html">查看进货单</a></div>
+        <div class="weui-flex__item"><a href="javascript:;" class="col_f but_ckjhd bg_col2 but bor_0 fs16">加入进货单</a> </div>
+      </div>
+</div>
+
+
+
+<div class="th_mt50"></div>
+<div class="weui-tabbar bg_f">
+  <a href="javascript:;" class="weui-tabbar__item">
+    <div class="weui-tabbar__icon iconfont">&#xe62a;</div>
+    <p class="weui-tabbar__label">首页</p>
+  </a>
+  <a href="javascript:;" class="weui-tabbar__item">
+    <div class="weui-tabbar__icon iconfont">&#xe66d;</div>
+    <p class="weui-tabbar__label">商品</p>
+  </a>
+  <a href="javascript:;" class="weui-tabbar__item">
+    <div class="weui-tabbar__icon iconfont">&#xe622;</div>
+    <p class="weui-tabbar__label">购物车</p>
+  </a>
+  <a href="member.html" class="weui-tabbar__item weui-bar__item--on">
+    <div class="weui-tabbar__icon iconfont">&#xe611;</div>
+    <p class="weui-tabbar__label">我的</p>
+  </a>
+</div>
+
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-weui.min.js"></script>
+	<script>
+    $("#picker").picker({
+      title: "请选择产品",
+      cols: [
+        {
+          textAlign: 'center',
+          values: [
+          '产品一']
+        }
+      ]
+    });
+    function submitForm(){
+        var form = document.getElementById("my_form");//获取form表单对象
+        form.submit();
+    }
+  </script>
+  <script>
+        var MAX = 99, MIN = 0;
+        $('.weui-count__decrease').click(function (e) {
+          var $input = $(e.currentTarget).parent().find('.weui-count__number');
+          var number = parseInt($input.val() || "0") - 1
+          if (number < MIN) number = MIN;
+          $input.val(number);
+         
+        })
+        $('.weui-count__increase').click(function (e) {
+          var $input = $(e.currentTarget).parent().find('.weui-count__number');
+          var number = parseInt($input.val() || "0") + 1
+          if (number > MAX) number = MAX;
+          $input.val(number);
+           
+        })
+  </script>
+  <script>
+    $('.wyth_foot_close').click(function() {
+        $('.mask').addClass('mask_act');
+        $('.Eject').css('bottom','-800px');
+     });
+    $('.eject_tj').click(function() {
+       $('.mask').toggleClass('mask_act');
+       $('.Eject').css('bottom','0');
+       $('#Eject .pop_img').attr('src',$(this).parents('.weui-cell').find('.sp_img')[0].src);
+       $('#Eject .pop_money').text($(this).parents('.weui-cell').find('.sp_money').text());
+       $('#Eject .price').text($(this).parents('.weui-cell').find('.sp_money').text());
+       $('#Eject .pop_name').text($(this).parents('.weui-cell').find('.p_name').text());
+       $('#Eject .da_kc').text($(this).parents('.weui-cell').attr('data-kc'));
+       $('#Eject').attr('data-id',$(this).parents('.weui-cell').attr('id'));
+     });
+    $('.but_ckjhd').click(function() {
+      if( $('input[type=number]').val() == '0'){
+         alert('请填写好订货数量！');
+         return false;
+        }
+      else{
+        var id=$('#Eject').attr('data-id');
+        var num=$('#Eject .weui-count__number').val();
+        console.log(id);
+        console.log(num);
+         $.ajax({
+            type:'GET',
+            url:'wyth1.html',
+            data:{
+              id:id,
+              num:num,
+            },
+            success:function(data){      
+              alert('添加商品成功');
+            },
+            error:function(){ 
+             alert("请求失败")
+            }
+         })
+      }
+    });
+  </script>
+  <script>
+    $('.weui-count__increase').click(function() {
+       var pr_inp=$('.weui-count__number').val();
+       $('.total').text(pr_inp);
+       $('.numer_j_em').text(pr_inp);
+       var dj =$('.price').text();
+       $('.total_money').text(parseFloat(dj)*parseFloat(pr_inp));
+    });
+    $('.weui-count__decrease').click(function() {
+       var pr_inp=$('.weui-count__number').val();
+       $('.total').text(pr_inp);
+       $('.numer_j_em').text(pr_inp);
+       var dj =$('.price').text();
+       $('.total_money').text(parseFloat(dj)*parseFloat(pr_inp));
+    });
+  </script>
+</body>
+</html>
