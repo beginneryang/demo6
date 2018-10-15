@@ -13,50 +13,59 @@
 
 <form method="GET" action="wyth1.html" id="my_form">
 <div class="header">
-	  <header class="weui-flex sqdl_header pd_rl">
-		  <div class="pd_r15"><a href="member.html">&lt; 返回</a></div>
-		  <div class="weui-flex__item pd_rl8">
-          <select class="inp col_f fs12" onchange="submitForm();" name="cpmc" style="width:88%;">
+    <header class="weui-flex sqdl_header pd_rl">
+      <div class="pd_r15"><a href="member.html">&lt; 返回</a></div>
+      <div class="weui-flex__item pd_rl8 weui-cell_select weui-cell_select-before ">
+        <div class="weui-cell__hd">
+          <select class="inp col_f fs14 weui-select pd_rl0" onchange="submitForm();" name="cpmc" >
             <option style="color:#333!important;" value="1">请点击选择产品</option>
              <option style="color:#333!important;" value="1">产品一产品一产品一产品一</option>
              <option style="color:#333!important;" value="2">产品二</option>
           </select>
-          <span class="fs16 col_f">∨</span>
+        </div>
       </div>
-		  <!-- <div class="weui-flex__item"><p class="p_a_fx fs12"><a href="wyth_xdfx.html">总部&gt;</a></p></div> -->
-		  <div class="txt_c mrl15"><a href="wyth_ssfl.html" class="iconfont col_f pd_rl">&#xe652;</a></div>
-		  <div class="fr txt_c"><a href="wyth2.html" class="iconfont col_f">&#xe62e;</a></div>
-		</header>
+      <!-- <div class="weui-flex__item"><p class="p_a_fx fs12"><a href="wyth_xdfx.html">总部&gt;</a></p></div> -->
+      <div class="txt_c mrl15"><a href="wyth_ssfl.html" class="iconfont col_f pd_rl">&#xe652;</a></div>
+      <div class="fr txt_c"><a href="wyth1.html" class="iconfont col_f">&#xe62e;</a></div>
+    </header>
 </div>
 </form>
 
-<div class="weui-cells mt40 wyth_list1">
-  <div class="weui-cell" id="1" data-kc="22">
-    <div class="weui-cell__hd wyth_list_img bg_f"><img class="sp_img" src="images/nr.jpg"></div>
-    <div class="weui-cell__bd fs14 wyth_list_p">
-      <p class="p_name fs16 col_0">产品名称11111</p>
-      <p class="col_qh fs14">品牌：<span>名称</span></p>
-      <p class="col_qh fs14">级别：<span class="col_r">￥<em class="sp_money">103.00</em></span></p>
+<div class="th_mt50"></div>
+
+<div class="wyth3">
+  <div class="wyth_list3 pd_rl clearfix" id="1" data-kc="22">
+    <div class="weui-flex">
+      <div class="weui-flex__item wyth_list_img mb10"><img class="sp_img" src="images/nr.jpg" alt=""></div>
     </div>
-    <div class="weui-cell__ft">
-      <a class="col_f  eject_tj" href="javascript:;">添加</a>
+    <div class="weui-flex wyth_list_p fs16"><div class="col_0 weui-flex__item p_name">产品名称111</div></div>
+    <div class="weui-flex">
+      <div class="weui-flex__item fs14 col_0">
+        <span>级别:</span><span></span>
+      </div>
     </div>
+    <div class="weui-flex wyth_list_p fs14 col_0"><div class=" weui-flex__item">价格： ￥<span class="col_r fw_bold fs20 sp_money">108.00</span></div></div>
+    <div class="weui-cell__ft th_mt5"><a class="col_f fs12 eject_tj fl" href="javascript:;">添加</a></div>
   </div>
-  <div class="weui-cell" id="2" data-kc="33">
-    <div class="weui-cell__hd wyth_list_img bg_f"><img class="sp_img" src="images/nr.jpg"></div>
-    <div class="weui-cell__bd fs14 wyth_list_p">
-      <p class="p_name fs16 col_0">产品名称2222</p>
-      <p class="col_qh fs14">品牌：<span>名称</span></p>
-      <p class="col_qh fs14">级别：<span class="col_r">￥<em class="sp_money">108.00</em></span></p>
+  <div class="wyth_list3 pd_rl clearfix" id="2" data-kc="33">
+    <div class="weui-flex">
+      <div class="weui-flex__item wyth_list_img mb10"><img class="sp_img" src="images/nr.jpg" alt=""></div>
     </div>
-    <div class="weui-cell__ft">
-      <a class="col_f  eject_tj" href="javascript:;">添加</a>
+    <div class="weui-flex wyth_list_p fs16"><div class="col_0 weui-flex__item p_name">产品名称222</div></div>
+    <div class="weui-flex">
+      <div class="weui-flex__item fs14 col_0">
+        <span>级别:</span><span></span>
+      </div>
     </div>
+    <div class="weui-flex wyth_list_p fs14 col_0"><div class=" weui-flex__item">价格： ￥<span class="col_r fw_bold fs20 sp_money">103.00</span></div></div>
+    <div class="weui-cell__ft th_mt5"><a class="col_f fs12 eject_tj fl" href="javascript:;">添加</a></div>
   </div>
 </div>
 
-<!-- <div class="null_num fs12 bg_f">没有更多数据</div>
- -->
+<div style="height:20px"></div>
+
+<!-- <div class="null_num fs12">没有更多数据</div> -->
+
 <div class="mask mask_act"></div>
 <div class="Eject" id='Eject'  data-sp="" data-id=''>
       <div class="weui-cells">
@@ -109,8 +118,6 @@
       </div>
 </div>
 
-
-
 <div class="th_mt50"></div>
 <div class="weui-tabbar bg_f">
   <a href="javascript:;" class="weui-tabbar__item">
@@ -133,9 +140,9 @@
 
 
 
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/jquery-weui.min.js"></script>
-	<script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery-weui.min.js"></script>
+  <script>
     $("#picker").picker({
       title: "请选择产品",
       cols: [
@@ -146,26 +153,24 @@
         }
       ]
     });
-    function submitForm(){
+     function submitForm(){
         var form = document.getElementById("my_form");//获取form表单对象
         form.submit();
     }
   </script>
-  <script>
+  <script type="text/javascript">
         var MAX = 99, MIN = 0;
         $('.weui-count__decrease').click(function (e) {
           var $input = $(e.currentTarget).parent().find('.weui-count__number');
           var number = parseInt($input.val() || "0") - 1
           if (number < MIN) number = MIN;
-          $input.val(number);
-         
+          $input.val(number)
         })
         $('.weui-count__increase').click(function (e) {
           var $input = $(e.currentTarget).parent().find('.weui-count__number');
           var number = parseInt($input.val() || "0") + 1
           if (number > MAX) number = MAX;
-          $input.val(number);
-           
+          $input.val(number)
         })
   </script>
   <script>
@@ -176,12 +181,12 @@
     $('.eject_tj').click(function() {
        $('.mask').toggleClass('mask_act');
        $('.Eject').css('bottom','0');
-       $('#Eject .pop_img').attr('src',$(this).parents('.weui-cell').find('.sp_img')[0].src);
-       $('#Eject .pop_money').text($(this).parents('.weui-cell').find('.sp_money').text());
-       $('#Eject .price').text($(this).parents('.weui-cell').find('.sp_money').text());
-       $('#Eject .pop_name').text($(this).parents('.weui-cell').find('.p_name').text());
-       $('#Eject .da_kc').text($(this).parents('.weui-cell').attr('data-kc'));
-       $('#Eject').attr('data-id',$(this).parents('.weui-cell').attr('id'));
+       $('#Eject .pop_img').attr('src',$(this).parents('.wyth_list3').find('.sp_img')[0].src);
+       $('#Eject .pop_money').text($(this).parents('.wyth_list3').find('.sp_money').text());
+       $('#Eject .price').text($(this).parents('.wyth_list3').find('.sp_money').text());
+       $('#Eject .pop_name').text($(this).parents('.wyth_list3').find('.p_name').text());
+       $('#Eject .da_kc').text($(this).parents('.wyth_list3').attr('data-kc'));
+       $('#Eject').attr('data-id',$(this).parents('.wyth_list3').attr('id'));
      });
     $('.but_ckjhd').click(function() {
       if( $('input[type=number]').val() == '0'){
@@ -224,6 +229,10 @@
        $('.numer_j_em').text(pr_inp);
        var dj =$('.price').text();
        $('.total_money').text(parseFloat(dj)*parseFloat(pr_inp));
+    });
+    $('.wyth_foot_close').click(function() {
+      $('.mask').addClass('mask_act');
+      $('.Eject').css('bottom','-800px');
     });
   </script>
 </body>
